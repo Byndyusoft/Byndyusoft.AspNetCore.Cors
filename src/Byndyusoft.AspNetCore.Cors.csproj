@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Version>2.2.0</Version>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>Byndyusoft.AspNetCore.Cors</PackageId>
+    <Title>Byndyusoft.AspNetCore.Cors</Title>
+    <Authors>Byndyusoft</Authors>
+    <RootNamespace>Byndyusoft.AspNetCore.Cors</RootNamespace>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PackageTags>byndyusoft;aspnetcore;cors</PackageTags>
+    <RepositoryUrl>https://github.com/Byndyusoft/Byndyusoft.AspNetCore.Cors</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageIcon>icon.png</PackageIcon>
+    <Description>Extends Microsoft.AspNetCore.Cors and allows AllowsAnyOrigin and AllowsCredentials features to be used together.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <None Include="..\icon.png" Pack="true" PackagePath="icon.png" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
+  </ItemGroup>
+
+</Project>
