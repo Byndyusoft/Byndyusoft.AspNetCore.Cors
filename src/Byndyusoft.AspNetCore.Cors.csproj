@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <Version>2.2.0</Version>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>5.0.1</Version>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <PackageId>Byndyusoft.AspNetCore.Cors</PackageId>
     <Title>Byndyusoft.AspNetCore.Cors</Title>
     <Authors>Byndyusoft</Authors>
@@ -14,6 +14,10 @@
     <PackageIcon>icon.png</PackageIcon>
     <Description>Extends Microsoft.AspNetCore.Cors and allows AllowsAnyOrigin and AllowsCredentials features to be used together.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>false</Optimize>
   </PropertyGroup>
   
   <ItemGroup>

@@ -14,14 +14,14 @@ This package allows you `AllowsAnyOrigin` and `AllowsCredentials` policy options
 
 ## Usage
 
-Package extends `IApplicationBuilder` with `UseInsecureCors` methods with the same signatures than the standard `UseCors` ones.
+Package extends `IApplicationBuilder` and `IServiceCollection` with `UseInsecureCors` methods with the same signatures than the standard `UseCors` ones.
 
 ```csharp
 public class Startup
 {
     public void ConfigureServices(IServiceCollection services)
     {   
-        services.AddCors();
+        services.UseInsecureCors();
     }
 
     public void Configure(IApplicationBuilder app)
